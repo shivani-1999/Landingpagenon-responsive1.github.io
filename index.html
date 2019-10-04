@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            width: 100%;
+            height: 100vh;
+            
+            /* border: 5px solid black; */
+        }
+        .main1
+        {
+            width: 100%;
+            height: 100%;
+            /* border: 5px solid blue; */
+            position: relative;
+        }
+        .main2
+        {
+            width: 100%;
+            height: 100%;
+            /* border: 5px solid red; */
+            position: relative;
+        }
+        .nav1
+        {
+            width: 100%;
+            height: 10%;
+            /* border: 5px solid yellow; */
+            position: absolute;
+            top: 0%;
+            display: flex;
+        }
+        .nav2
+        {
+            width: 100%;
+            height: 15%;
+            /* border: 5px solid green; */
+            position: absolute;
+            top: 10%;
+            display: flex
+        }
+        .head
+        {
+            width: 70%;
+            height: 50%;
+            /* border: 5px solid black; */
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+        .date
+        {
+            width: 100%;
+            height: 5%;
+            /* border: 2px solid yellowgreen; */
+            color: white;
+            text-align: center;
+        }
+        .slogan
+        {
+            width: 100%;
+            height: 30%;
+            /* border: 2px solid purple; */
+            color: white;
+            font-size: 70px;
+            text-align: center;
+        }
+        .slogand
+        {
+            width: 100%;
+            height: 25%;
+            /* border: 2px solid brown; */
+            color: white;
+            text-align: center;
+        }
+        .but
+        {
+            width: 100%;
+            height: 15%;
+            /* border: 2px solid teal; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button
+        {
+            width: 20%;
+            height: 80%;
+            font-size: 20px;
+            background-color: rgb(136 , 210, 3);
+            border: none;
+            color: white;
+        }
+        .image
+        {
+            width: 100%;
+            height: 100%;
+            background-image: url('acrylic-android-wallpaper-art-1012982.jpg');
+            background-size: 100% 100%;
+        }
+        .overlay
+        {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0,0.8);
+            top: 0%;
+            position: absolute;
+        }
+        .nav11
+        {
+            width:50%;
+            height: 100%;
+            display: flex;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .nav111,.nav112
+        {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav12
+        {
+            width: 50%;
+            /* height: 100%;
+            border: 2px solid black; */
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-content: center;
+        }
+        .nav121,.nav122,.nav123,.nav124
+        {
+            width: 10%;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav21
+        {
+            width: 30%;
+            height: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        .nav211
+        {
+            width: 50%;
+            height: 100%;
+            /* border: 2px solid pink; */
+            color:blue;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 40px;
+        }
+        .nav212
+        {
+            width: 50%;
+            height: 100%;
+            /* border: 2px solid blueviolet; */
+            color: white;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav22
+        {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .nav22>li
+        {
+            width: 10%;
+            list-style: none;
+        }
+        .footer
+        {
+            width: 100%;
+            height: 50%;
+            /* border: 2px solid black; */
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           position: absolute;
+           display: flex;
+           justify-content: center;
+            align-items: center;
+        }
+        .foot1,.foot2,.foot3
+        {
+            width: 30%;
+            height: 100%;
+            /* border: 2px solid black; */
+            background-color: #F1F8E9;
+            margin: 2%;
+        }
+        .img
+        {
+            color: #76FF03;
+            font-size: 70px;
+            width: 100%;
+            height: 30%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img1
+        {
+            color: #76FF03;
+            width: 100%;
+            height: 10%;
+            /* border: 2px solid pink; */
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main1">
+            <div class="image"></div>
+            <div class="overlay"></div>
+            <div class="nav1">
+                <div class="nav11">
+                    <div class="nav111"><a href="#"><b>Visit Us</b></a></div>
+                    <div class="nav112"><a href="#"><b>Buy Ticket</b></a></div>
+                </div>
+                <div class="nav12">
+                    <div class="nav121"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></i></div>
+                    <div class="nav122"><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></div>
+                    <div class="nav123"><a href="#"><i class="fab fa-android"></i></a></div>
+                    <div class="nav124"><a href="https://www.google.com/"><i class="fab fa-google"></i></a></div>
+                </div>
+            </div>
+            <div class="nav2">
+                <div class="nav21">
+                    <div class="nav211"><i class="fas fa-palette"></i></div>
+                    <div class="nav212">Art Museum</div>
+                </div>
+                <div class="nav22">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">TICKET</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">PAGES</a></li>
+                </div>
+            </div>
+            <div class="head">
+                <div class="date"><b>OPENNING ON 21 February, 2019</b></div>
+                <div class="slogan"><b>Exhibition on Modern Era</b></div>
+                <div class="slogand">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus non dolorum, ipsam iusto repellat totam soluta adipisci sunt, deleniti fuga  sequi<br> praesentium illum assumenda repellendus error! Minus fugiat culpa architecto sed facilis! Minus, ab fugiat.</div>
+                <div class="but">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="footer">
+                <div class="foot1">
+                    <div class="img"><i class="far fa-clock"></i></div>
+                    <div class="img1"><b>Opening Hours</b></div>
+                    <div class="img3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum accusamus nisi excepturi libero quasi illo aut natus fugit officiis, eligendi quis omnis in iure facere voluptate aperiam, recusandae non. Sint saepe in delectus nostrum non dignissimos eius, soluta quo magni omnis tempore amet a fugiat eum laborum iste aut optio consequuntur placeat! Tempora reprehenderit ullam porro, quam voluptatem in quos ea ab possimus inventore molestias beatae debitis consectetur dolorum temporibus, atque aperiam rem assumenda reiciendis, qui rerum eligendi. Qui, in accusantium. Consectetur tempora obcaecati provident dolore quia iusto ut.</div>
+                </div>
+                <div class="foot2">
+                    <div class="img"><i class="fas fa-fighter-jet"></i></div>
+                    <div class="img1"><b>Opening Exhibitions</b></div>
+                    <div class="img3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem cumque dignissimos. Iste quia provident assumenda velit sed quas at cum, ea harum, dolor reiciendis, mollitia neque iure porro aspernatur vel odit exercitationem minus quibusdam sapiente veniam reprehenderit numquam aliquid! Harum itaque culpa, est placeat pariatur eos cupiditate debitis quasi. Odio commodi reiciendis dolore, odit architecto modi repellendus facilis magni delectus ex dolorum iste nostrum doloremque consectetur culpa fugiat dicta quo distinctio est quia quis ipsam eligendi! Eos veritatis officia obcaecati recusandae non delectus asperiores, totam fugiat sint, explicabo quia?</div>
+                </div>
+                <div class="foot3">
+                    <div class="img"><i class="fas fa-business-time"></i></div>
+                    <div class="img1"><b>Opening Events</b></div>
+                    <div class="img3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, possimus tempora cumque, minus dolorum aperiam nobis assumenda neque provident excepturi repellat rerum quisquam ipsum doloribus officia. Fugiat nulla blanditiis eum maiores facere! Rerum reprehenderit nam dolorem, temporibus ullam qui quod ea. Provident, error natus veritatis dicta voluptatum, dolorum voluptatem doloribus maiores libero doloremque repudiandae? Eligendi, quod aperiam obcaecati dolore porro magni aliquid, maiores tempore pariatur consectetur est amet, repudiandae reprehenderit cum voluptatum tenetur cupiditate ea corporis! Asperiores consectetur reiciendis quis?</div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
